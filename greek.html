@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>The Nasworthy Museum - The Great Grecians</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="stylesheet" href="lightbox.css" type="text/css" media="screen" />
+
+<script>
+    
+        function Show( id )
+        {            
+            if( id == "hidden1" )
+            {
+                document.getElementById("hidden1").style.display = "block";
+                document.getElementById("hidden2").style.display = "none";
+                document.getElementById("hidden3").style.display = "none";
+            }
+            
+            if( id == "hidden2" )
+            {
+                document.getElementById("hidden1").style.display = "none";
+                document.getElementById("hidden2").style.display = "block";
+                document.getElementById("hidden3").style.display = "none";
+            }
+            
+            if( id == "hidden3" )
+            {
+                document.getElementById("hidden1").style.display = "none";
+                document.getElementById("hidden2").style.display = "none";
+                document.getElementById("hidden3").style.display = "block";
+            }
+        }
+        function Hide()
+        	{
+                document.getElementById("hidden1").style.display = "none";
+                document.getElementById("hidden2").style.display = "none";
+                document.getElementById("hidden3").style.display = "none";
+        	}
+</script>
+<script type="text/javascript" src="js/prototype.js"></script>
+<script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+</head>
+<body>
+    
+<div id="wrapper">
+	<div id="header">
+           <a href="index.html"><img src="images/logo1.png" alt="logo" /></a>
+        </div>
+
+        
+
+	<div class="navbar1">
+	<ul>
+		<li><a href="index.html" onmouseover="Show('hidden1');">Home</a></li> 
+		<li><a href="exhibits.html" onmouseover="Show('hidden2');">Exhibits</a></li>
+		<li><a href="excavations.html" onmouseover="Show('hidden3')">Excavations</a></li>
+	</ul>
+    </div>
+    
+    <div id="hidden1" class="navbar2">
+    	<ul>
+			<li class="navbarLocation"><a href="visitus.html">Visit Us</a></li> 
+			<li class="navbarLocation"><a href="donations.html">Donations</a></li>
+			<li><a href="membership.html">Membership</a></li>
+    	</ul>
+	</div>
+    
+    <div id="hidden2" class="navbar2">
+    	<ul>
+    		<li class="navbarLocation"><a href="mayan.html">Mayan</a></li>
+    		<li class="navbarLocation"><a href="aztec.html">Aztec</a></li>
+    		<li class="navbarLocation"><a href="greek.html">Greek</a></li>
+    		<li class="navbarLocation"><a href="roman.html">Roman</a></li>
+    		<li><a href="egyptian.html">Egyptian</a></li>
+    	</ul>
+    </div>
+    <div id="hidden3" class="navbar2">
+    	<ul>
+    		<li class="navbarLocation"><a href="greece.html">Greece</a></li>
+    		<li><a href="mexico.html">Mexico</a></li>
+    	</ul>
+    </div>
+    <div id="contentContainer">    
+    <div id="sidebar">
+		<h2>Exhibit Photos</h2>
+		<p><a href="images/greek1_large.jpg" rel="lightbox[greek]" title="Greek chariot hardware"><img src="images/greek1_sml.jpg" alt="Image from the Greek Exhibit" /></a>
+		<a href="images/greek2_large.jpg" rel="lightbox[greek]" title="Greek statue head"><img src="images/greek2_sml.jpg" alt="Image from the Greek Exhibit" /></a>
+		<a href="images/greek3_large.jpg" rel="lightbox[greek]" title="Greek golden crown"><img src="images/greek3_sml.jpg" alt="Image from the Greek Exhibit" /></a></p>
+		
+	</div>
+        
+	<div id="mainContent">
+		<h2>Greek Exhibit at the Nasworthy Museum</h2>
+		<p>We are privileged to have on loan from the Athens and Delphi museums many artifacts from ancient Greece. The golden mask of "Agamemnon", discovered by Heinrich Schliemann in Mycenae is one of our most visited attractions. But don't forget to visit our sculpture room to see the giant bronze statue of Zeus (or is it Poseidon?). These artifacts represent over a thousand years of Greek history - from the time of Homer through the conquest of Alexander, to the Roman occupation. No visit will be complete without experiencing the genius of the Antikytheran Mechanism - a 2,000 year old gear-driven calculator!</p>
+		
+		<div><iframe title="YouTube video player" width="480" height="390" src="http://www.youtube.com/embed/OiUgBeb2vtk?rel=0" frameborder="0" allowfullscreen></iframe></div>
+	</div>
+	</div>
+</div>
+
+
+<div id="footer-wrapper">
+    <div id="footer">
+        <p>Nasworthy Museum &copy;</p>
+
+    </div>
+</div>
+</body>
+</html>

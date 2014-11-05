@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>The Nasworthy Museum - Mystic Mayans!</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="stylesheet" href="lightbox.css" type="text/css" media="screen" />
+
+<script>
+    
+        function Show( id )
+        {            
+            if( id == "hidden1" )
+            {
+                document.getElementById("hidden1").style.display = "block";
+                document.getElementById("hidden2").style.display = "none";
+                document.getElementById("hidden3").style.display = "none";
+            }
+            
+            if( id == "hidden2" )
+            {
+                document.getElementById("hidden1").style.display = "none";
+                document.getElementById("hidden2").style.display = "block";
+                document.getElementById("hidden3").style.display = "none";
+            }
+            
+            if( id == "hidden3" )
+            {
+                document.getElementById("hidden1").style.display = "none";
+                document.getElementById("hidden2").style.display = "none";
+                document.getElementById("hidden3").style.display = "block";
+            }
+        }
+        function Hide()
+        	{
+                document.getElementById("hidden1").style.display = "none";
+                document.getElementById("hidden2").style.display = "none";
+                document.getElementById("hidden3").style.display = "none";
+        	}
+</script>
+<script type="text/javascript" src="js/prototype.js"></script>
+<script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+</head>
+<body>
+    
+<div id="wrapper">
+	<div id="header">
+           <a href="index.html"><img src="images/logo1.png" alt="logo" /></a>
+        </div>
+
+        
+
+	<div class="navbar1">
+	<ul>
+		<li><a href="index.html" onmouseover="Show('hidden1');">Home</a></li> 
+		<li><a href="exhibits.html" onmouseover="Show('hidden2');">Exhibits</a></li>
+		<li><a href="excavations.html" onmouseover="Show('hidden3')">Excavations</a></li>
+	</ul>
+    </div>
+    
+    <div id="hidden1" class="navbar2">
+    	<ul>
+			<li class="navbarLocation"><a href="visitus.html">Visit Us</a></li> 
+			<li class="navbarLocation"><a href="donations.html">Donations</a></li>
+			<li><a href="membership.html">Membership</a></li>
+    	</ul>
+	</div>
+    
+    <div id="hidden2" class="navbar2">
+    	<ul>
+    		<li class="navbarLocation"><a href="mayan.html">Mayan</a></li>
+    		<li class="navbarLocation"><a href="aztec.html">Aztec</a></li>
+    		<li class="navbarLocation"><a href="greek.html">Greek</a></li>
+    		<li class="navbarLocation"><a href="roman.html">Roman</a></li>
+    		<li><a href="egyptian.html">Egyptian</a></li>
+    	</ul>
+    </div>
+    <div id="hidden3" class="navbar2">
+    	<ul>
+    		<li class="navbarLocation"><a href="greece.html">Greece</a></li>
+    		<li><a href="mexico.html">Mexico</a></li>
+    	</ul>
+    </div>
+    <div id="contentContainer">    
+    <div id="sidebar">
+		<h2>Exhibit Photos</h2>
+		<p><a href="images/mayan1_large.jpg" rel="lightbox[mayan]" title="Mayan hieroglyphics"><img src="images/mayan1_sml.jpg" alt="Image from the Roman Exhibit" /></a>
+		<a href="images/mayan2_large.jpg" rel="lightbox[mayan]" title="Mayan hieroglyphics"><img src="images/mayan2_sml.jpg" alt="Image from the Roman Exhibit" /></a>
+		<a href="images/mayan3_large.jpg" rel="lightbox[mayan]" title="Mayan ruins at Kabbah"><img src="images/mayan3_sml.jpg" alt="Image from the Roman Exhibit" /></a></p>
+		
+	</div>
+        
+	<div id="mainContent">
+		<h2>Mayan Exhibit at the Nasworthy Museum</h2>
+		<p>Although we have a wide selection of pottery and small sculptures from over a thousand years of Mayan history, perhaps the most fascinating exhibits here are the fine examples of Mayan hieroglyphics. Much more rich in imagination and detail than those of Egypt, the Mayan glyphs appear as intricate cartoons on pottery and paper. In stone, they are ferocious reminders of important rulers and conquests, as well as precise dates. In fact, we can now use the Mayan date glyphs to tell the exact date an event occurred. Don't miss our excellent selection of early writing!</p>
+		
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat tellus sed urna aliquam ullamcorper. Vestibulum viverra augue ac tortor ornare convallis. Aenean nec nisi tortor, non blandit velit. In sem nunc, blandit in dictum a, suscipit mollis eros. Curabitur facilisis ornare ultricies. Fusce eget orci lacus. Sed suscipit vehicula vulputate. Praesent facilisis ipsum vel nibh blandit pretium. Praesent massa nulla, vehicula vel blandit non, gravida sit amet nunc. Pellentesque nec diam rutrum metus gravida ullamcorper. Etiam lorem lectus, posuere ut laoreet eu, mollis nec risus. Vivamus sit amet dui non mauris porta commodo ut ut nulla. Suspendisse faucibus fermentum luctus. Vestibulum non felis erat. Vivamus tincidunt, mauris ut accumsan tempus, dui diam volutpat magna, ut elementum tellus ante et tellus. Duis dictum, odio sit amet facilisis pretium, augue odio blandit massa, nec posuere turpis massa vel nisi. Vestibulum sit amet augue ac elit ullamcorper posuere.</p>
+
+	</div>
+	</div>
+</div>
+
+
+<div id="footer-wrapper">
+    <div id="footer">
+        <p>Nasworthy Museum &copy;</p>
+
+    </div>
+</div>
+</body>
+</html>

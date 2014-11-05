@@ -1,0 +1,372 @@
+
+--------------------------------------------------
+
+CSE HTML Validator Lite v10.00 (Registered)
+Checking "G:\ITD210\project02\index.html" (6941 characters).
+File date is Wednesday, March 30, 2011 at 10:25:58 AM.
+File checked on Wednesday, March 30, 2011 at 12:03:52 PM.
+
+     Number of lines checked: 94 in 0.00 seconds
+      Number of programs run: 202
+ Number of lines in document: 154 (61.0% of lines checked)
+     Number of lines ignored: 60
+Number of character entities: 1
+        Number of start tags: 74
+          Number of end tags: 68 (91.9% of start tags with end tags)
+Number of <% ... %> sections: 0
+     Number of HTML comments: 0
+
+Number of validator comments: 3
+          Number of messages: 0
+            Number of errors: 1 (first in line 131)
+          Number of warnings: 0
+
+--------------------------------------------------
+
+   1: <?xml version="1.0" encoding="UTF-8"?>
+   2: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+   3: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   4: <head>
+   5:     <title>The Nasworthy Museum - The Museum with all the old stuff!</title>
+   6:     <link rel="stylesheet" href="styles.css" type="text/css" />
+   7:     <link rel="stylesheet" href="lightbox.css" type="text/css" media="screen" />
+   8: <script>
+   9:     
+  10:         function Show( id )
+  11:         {            
+  12:             if( id == "hidden1" )
+  13:             {
+  14:                 document.getElementById("hidden1").style.display = "block";
+  15:                 document.getElementById("hidden2").style.display = "none";
+  16:                 document.getElementById("hidden3").style.display = "none";
+  17:             }
+  18:             
+  19:             if( id == "hidden2" )
+  20:             {
+  21:                 document.getElementById("hidden1").style.display = "none";
+  22:                 document.getElementById("hidden2").style.display = "block";
+  23:                 document.getElementById("hidden3").style.display = "none";
+  24:             }
+  25:             
+  26:             if( id == "hidden3" )
+  27:             {
+  28:                 document.getElementById("hidden1").style.display = "none";
+  29:                 document.getElementById("hidden2").style.display = "none";
+  30:                 document.getElementById("hidden3").style.display = "block";
+  31:             }
+  32:         }
+  33:         function Hide()
+  34:          {
+  35:                 document.getElementById("hidden1").style.display = "none";
+  36:                 document.getElementById("hidden2").style.display = "none";
+  37:                 document.getElementById("hidden3").style.display = "none";
+  38:          }
+  39: </script>
+  40: <script type="text/javascript" src="js/prototype.js"></script>
+  41: <script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
+  42: <script type="text/javascript" src="js/lightbox.js"></script>
+  43: <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+  44: </head> 
+  45: <body>
+  46:    
+  47: <div id="wrapper">
+  48:  <div id="header">
+  49:            <a href="index.html"><img src="images/logo1.png" alt="logo" /></a>
+  50:         </div>
+  51: 
+  52:         
+  53: 
+  54:  <div class="navbar1">
+  55:  <ul>
+  56:   <li><a href="index.html" onmouseover="Show('hidden1');">Home</a></li> 
+  57:   <li><a href="exhibits.html" onmouseover="Show('hidden2');">Exhibits</a></li>
+  58:   <li><a href="Excavations" onmouseover="Show('hidden3')">Excavations</a></li>
+  59:  </ul>
+  60:     </div>
+  61:     
+  62:     <div id="hidden1" class="navbar2">
+  63:      <ul>
+  64:    <li class="navbarLocation"><a href="visitus.html">Visit Us</a></li> 
+  65:    <li class="navbarLocation"><a href="donations.html">Donations</a></li>
+  66:    <li><a href="membership.html">Membership</a></li>
+  67:      </ul>
+  68:  </div>
+  69:     
+  70:     <div id="hidden2" class="navbar2">
+  71:      <ul>
+  72:       <li class="navbarLocation"><a href="mayan.html">Mayan</a></li>
+  73:       <li class="navbarLocation"><a href="aztec.html">Aztec</a></li>
+  74:       <li class="navbarLocation"><a href="greek.html">Greek</a></li>
+  75:       <li class="navbarLocation"><a href="roman.html">Roman</a></li>
+  76:       <li><a href="egyptian.html">Egyptian</a></li>
+  77:      </ul>
+  78:     </div>
+  79:     <div id="hidden3" class="navbar2">
+  80:      <ul>
+  81:       <li class="navbarLocation"><a href="greece.html">Greece</a></li>
+  82:       <li><a href="mexico.html">Mexico</a></li>
+  83:      </ul>
+  84:     </div>
+  85:     <div id="contentContainer">    
+  86:     <div id="sidebar">
+  87:   <h2>Upcoming events</h2>
+  88:   <h4>New Antikythera Mechanism display</h4>
+  89:   
+  90:   <a href="images/antikythera_large.jpg" rel="lightbox" title="The Antikytheran Machine"><img src="images/antikythera_sml.jpg" alt="Image of the Antikytheran Machine" /></a>
+  91:     
+  92:   <h4>2010 donation drive breaks records</h4>
+  93: 
+  94:   <h4>Museum Park renovations complete!</h4>
+  95:   <a href="images/museum-garden.jpg" rel="lightbox" title="Our lovely park"><img src="images/museum-garden.jpg" alt="Garden at the Museum" /></a>
+  96:   
+  97:   <div>
+  98:   <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+  99:            <script>
+ 100:            new TWTR.Widget({
+ 101:              version: 2,
+ 102:              type: 'profile',
+ 103:              rpp: 4,
+ 104:              interval: 6000,
+ 105:              width: 250,
+ 106:              height: 300,
+ 107:              theme: {
+ 108:                shell: {
+ 109:                  background: '#333333',
+ 110:                  color: '#ffffff'
+ 111:                },
+ 112:                tweets: {
+ 113:                  background: '#ffffff',
+ 114:                  color: '#000000',
+ 115:                  links: 'green'
+ 116:                }
+ 117:              },
+ 118:              features: {
+ 119:                scrollbar: false,
+ 120:                loop: false,
+ 121:                live: false,
+ 122:                hashtags: true,
+ 123:                timestamp: true,
+ 124:                avatars: false,
+ 125:                behavior: 'all'
+ 126:              }
+ 127:            }).render().setUser('nasworthymuseum').start();
+ 128:            </script>
+ 129:   </div>
+ 130:   <div>
+ 131:    <iframe src="http://www.facebook.com/plugins/like.php?href=file%3A%2F%2F%2FG%3A%2FITD210%2Fproject02%2Findex.html&amp;layout=standard&amp;show_faces=false&amp;width=450&amp;action=like&amp;font&amp;colorscheme=light&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe>
+ 132:   </div>
+ 133:  </div>
+ 134:         
+ 135:  <div id="mainContent">
+ 136:   <h2>Welcome to The Nasworthy Museum Online</h2>
+ 137:   <p>Welcome to the Nasworthy Museum of Archaeology! We have an exciting new year planned for our guests, including new exhibits and more educational events. Our new web site contains all of the information you need to become a part of our heritage and share in our knowledge of ancient civilizations. For discounts and early notification of events, please consider membership!</p>
+ 138:   
+ 139:  <div class="centerAll">
+ 140:   <a href="images/museum-front.jpg" rel="lightbox" title="Front of the museum"><img src="images/museum-front.jpg" alt="Front of the museum" /></a>
+ 141:  </div>
+ 142:   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat tellus sed urna aliquam ullamcorper. Vestibulum viverra augue ac tortor ornare convallis. Aenean nec nisi tortor, non blandit velit. In sem nunc, blandit in dictum a, suscipit mollis eros. Curabitur facilisis ornare ultricies. Fusce eget orci lacus. Sed suscipit vehicula vulputate. Praesent facilisis ipsum vel nibh blandit pretium. Praesent massa nulla, vehicula vel blandit non, gravida sit amet nunc. Pellentesque nec diam rutrum metus gravida ullamcorper. Etiam lorem lectus, posuere ut laoreet eu, mollis nec risus. Vivamus sit amet dui non mauris porta commodo ut ut nulla. Suspendisse faucibus fermentum luctus. Vestibulum non felis erat. Vivamus tincidunt, mauris ut accumsan tempus, dui diam volutpat magna, ut elementum tellus ante et tellus. Duis dictum, odio sit amet facilisis pretium, augue odio blandit massa, nec posuere turpis massa vel nisi. Vestibulum sit amet augue ac elit ullamcorper posuere.</p>
+ 143:  </div>
+ 144:  </div>
+ 145: </div>
+ 146: 
+ 147: <div id="footer-wrapper">
+ 148:     <div id="footer">
+ 149:         <p>Nasworthy Museum &copy;</p>
+ 150: 
+ 151:     </div>
+ 152: </div>
+ 153: </body>
+ 154: </html>
+
+[CSE] Comment number 1:
+See at least 5 additional error/warning messages with the
+standard or professional edition. This message can be
+disabled in the 'Lite' page of the Validator Engine Options.
+
+ 131:    <iframe src="http://www.facebook.com/plugins/like.php?href=file%3A%2F%2F%2FG%3A%2FITD210%2Fproject02%2Findex.html&amp;layout=standard&amp;show_faces=false&amp;width=450&amp;action=like&amp;font&amp;colorscheme=light&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|||||||||||||||||
+
+[CSE] Error number 1 in line 131:330:
+"allowTransparency" contains uppercase characters. All start
+tags, end tags, and tag attributes must be in lowercase
+because this is an XHTML document and XHTML is
+case-sensitive.
+
+ 132:   </div>
+ 133:  </div>
+ 134:         
+ 135:  <div id="mainContent">
+ 136:   <h2>Welcome to The Nasworthy Museum Online</h2>
+ 137:   <p>Welcome to the Nasworthy Museum of Archaeology! We have an exciting new year planned for our guests, including new exhibits and more educational events. Our new web site contains all of the information you need to become a part of our heritage and share in our knowledge of ancient civilizations. For discounts and early notification of events, please consider membership!</p>
+ 138:   
+ 139:  <div class="centerAll">
+ 140:   <a href="images/museum-front.jpg" rel="lightbox" title="Front of the museum"><img src="images/museum-front.jpg" alt="Front of the museum" /></a>
+ 141:  </div>
+ 142:   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat tellus sed urna aliquam ullamcorper. Vestibulum viverra augue ac tortor ornare convallis. Aenean nec nisi tortor, non blandit velit. In sem nunc, blandit in dictum a, suscipit mollis eros. Curabitur facilisis ornare ultricies. Fusce eget orci lacus. Sed suscipit vehicula vulputate. Praesent facilisis ipsum vel nibh blandit pretium. Praesent massa nulla, vehicula vel blandit non, gravida sit amet nunc. Pellentesque nec diam rutrum metus gravida ullamcorper. Etiam lorem lectus, posuere ut laoreet eu, mollis nec risus. Vivamus sit amet dui non mauris porta commodo ut ut nulla. Suspendisse faucibus fermentum luctus. Vestibulum non felis erat. Vivamus tincidunt, mauris ut accumsan tempus, dui diam volutpat magna, ut elementum tellus ante et tellus. Duis dictum, odio sit amet facilisis pretium, augue odio blandit massa, nec posuere turpis massa vel nisi. Vestibulum sit amet augue ac elit ullamcorper posuere.</p>
+ 143:  </div>
+ 144:  </div>
+ 145: </div>
+ 146: 
+ 147: <div id="footer-wrapper">
+ 148:     <div id="footer">
+ 149:         <p>Nasworthy Museum &copy;</p>
+ 150: 
+ 151:     </div>
+ 152: </div>
+ 153: </body>
+ 154: </html>
+
+[CSE] Comment number 2:
+This document appears to contain JavaScript which can
+optionally be checked for certain problems in the standard
+and professional editions. Consider upgrading to get this
+added functionality.
+
+[CSE] Comment number 3:
+1 error, 0 warnings, 0 messages, 3 comments.
+
+--------------------------------------------------
+
+<html> (3) 
+| <head> (4) 
+| | <title> (5) 
+| | </title> (5) 
+| | <link/> (6) <link/> (7) 
+| | <script> (8) 
+| | </script> (39) 
+| | <script> (40) 
+| | </script> (40) 
+| | <script> (41) 
+| | </script> (41) 
+| | <script> (42) 
+| | </script> (42) 
+| | <script> (43) 
+| | </script> (43) 
+| </head> (44) 
+| <body> (45) 
+| | <div> (47) 
+| | | <div> (48) 
+| | | | <a> (49) 
+| | | | | <img/> (49) 
+| | | | </a> (49) 
+| | | </div> (50) 
+| | | <div> (54) 
+| | | | <ul> (55) 
+| | | | | <li> (56) 
+| | | | | | <a> (56) 
+| | | | | | </a> (56) 
+| | | | | </li> (56) 
+| | | | | <li> (57) 
+| | | | | | <a> (57) 
+| | | | | | </a> (57) 
+| | | | | </li> (57) 
+| | | | | <li> (58) 
+| | | | | | <a> (58) 
+| | | | | | </a> (58) 
+| | | | | </li> (58) 
+| | | | </ul> (59) 
+| | | </div> (60) 
+| | | <div> (62) 
+| | | | <ul> (63) 
+| | | | | <li> (64) 
+| | | | | | <a> (64) 
+| | | | | | </a> (64) 
+| | | | | </li> (64) 
+| | | | | <li> (65) 
+| | | | | | <a> (65) 
+| | | | | | </a> (65) 
+| | | | | </li> (65) 
+| | | | | <li> (66) 
+| | | | | | <a> (66) 
+| | | | | | </a> (66) 
+| | | | | </li> (66) 
+| | | | </ul> (67) 
+| | | </div> (68) 
+| | | <div> (70) 
+| | | | <ul> (71) 
+| | | | | <li> (72) 
+| | | | | | <a> (72) 
+| | | | | | </a> (72) 
+| | | | | </li> (72) 
+| | | | | <li> (73) 
+| | | | | | <a> (73) 
+| | | | | | </a> (73) 
+| | | | | </li> (73) 
+| | | | | <li> (74) 
+| | | | | | <a> (74) 
+| | | | | | </a> (74) 
+| | | | | </li> (74) 
+| | | | | <li> (75) 
+| | | | | | <a> (75) 
+| | | | | | </a> (75) 
+| | | | | </li> (75) 
+| | | | | <li> (76) 
+| | | | | | <a> (76) 
+| | | | | | </a> (76) 
+| | | | | </li> (76) 
+| | | | </ul> (77) 
+| | | </div> (78) 
+| | | <div> (79) 
+| | | | <ul> (80) 
+| | | | | <li> (81) 
+| | | | | | <a> (81) 
+| | | | | | </a> (81) 
+| | | | | </li> (81) 
+| | | | | <li> (82) 
+| | | | | | <a> (82) 
+| | | | | | </a> (82) 
+| | | | | </li> (82) 
+| | | | </ul> (83) 
+| | | </div> (84) 
+| | | <div> (85) 
+| | | | <div> (86) 
+| | | | | <h2> (87) 
+| | | | | </h2> (87) 
+| | | | | <h4> (88) 
+| | | | | </h4> (88) 
+| | | | | <a> (90) 
+| | | | | | <img/> (90) 
+| | | | | </a> (90) 
+| | | | | <h4> (92) 
+| | | | | </h4> (92) 
+| | | | | <h4> (94) 
+| | | | | </h4> (94) 
+| | | | | <a> (95) 
+| | | | | | <img/> (95) 
+| | | | | </a> (95) 
+| | | | | <div> (97) 
+| | | | | | <script> (98) 
+| | | | | | </script> (98) 
+| | | | | | <script> (99) 
+| | | | | | </script> (128) 
+| | | | | </div> (129) 
+| | | | | <div> (130) 
+| | | | | | <iframe> (131) 
+| | | | | | </iframe> (131) 
+| | | | | </div> (132) 
+| | | | </div> (133) 
+| | | | <div> (135) 
+| | | | | <h2> (136) 
+| | | | | </h2> (136) 
+| | | | | <p> (137) 
+| | | | | </p> (137) 
+| | | | | <div> (139) 
+| | | | | | <a> (140) 
+| | | | | | | <img/> (140) 
+| | | | | | </a> (140) 
+| | | | | </div> (141) 
+| | | | | <p> (142) 
+| | | | | </p> (142) 
+| | | | </div> (143) 
+| | | </div> (144) 
+| | </div> (145) 
+| | <div> (147) 
+| | | <div> (148) 
+| | | | <p> (149) 
+| | | | | &copy; (149) 
+| | | | </p> (149) 
+| | | </div> (151) 
+| | </div> (152) 
+| </body> (153) 
+</html> (154) 
+
